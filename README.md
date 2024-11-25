@@ -1,2 +1,1 @@
-# nguyen365-build.github.io
-Hello world !
+# build.nguyen365.com
