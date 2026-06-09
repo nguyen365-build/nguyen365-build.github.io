@@ -2940,6 +2940,40 @@ Developer specializing in software engineering practices and SDLC methodologies,
 
 </section><!-- /Resume Section -->
 
+<style>
+.flip-card {
+  perspective: 1000px;
+  height: 100%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+</style>
+
 <!-- Portfolio Section -->
 <section id="portfolio" class="portfolio section light-background">
 
@@ -2964,186 +2998,307 @@ Developer specializing in software engineering practices and SDLC methodologies,
 
 <!-- Government Projects -->
 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-government">
-<div class="portfolio-content h-100" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; overflow: hidden; color: white; display: flex; flex-direction: column; justify-content: flex-start; text-align: left; min-height: 250px; padding: 20px;">
-<i class="bi bi-heart" style="font-size: 2.5rem; margin-bottom: 10px; color: white;"></i>
-<h4 style="color: white; margin: 0 0 8px 0; font-weight: bold; font-size: 1.1rem; line-height: 1.3;">ASDIF</h4>
-<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.8rem; font-weight: 600;"><strong>Client:</strong> Ministry of Social Services</p>
-<p style="color: rgba(255,255,255,0.85); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong> Provides funding for therapeutic services</p>
-<p style="color: rgba(255,255,255,0.8); margin: 0 0 8px 0; font-size: 0.7rem;"><strong>Tech:</strong> Java Spring Boot, SQL Server, Angular 7</p>
-<a href="https://autismfunding.saskatchewan.ca/" target="_blank" title="Visit Project" class="details-link" style="color: white; margin-top: auto; padding-top: 10px;"><i class="bi bi-link-45deg"></i> Visit</a>
+<div class="flip-card">
+<div class="flip-card-inner">
+<!-- Front -->
+<div class="flip-card-front" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); justify-content: center; align-items: center; text-align: center;">
+<i class="bi bi-heart" style="font-size: 3rem; margin-bottom: 10px; color: white;"></i>
+<h4 style="color: white; margin: 0; font-weight: bold; font-size: 1.3rem;">ASDIF</h4>
+<p style="color: rgba(255,255,255,0.85); margin: 8px 0 0 0; font-size: 0.8rem;">Hover to view details</p>
+</div>
+<!-- Back -->
+<div class="flip-card-back" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); justify-content: flex-start; padding: 20px; text-align: left;">
+<h4 style="color: white; margin: 0 0 10px 0; font-weight: bold; font-size: 1rem;">ASDIF</h4>
+<p style="color: rgba(255,255,255,0.95); margin: 0 0 8px 0; font-size: 0.8rem;"><strong>Client:</strong><br/>Ministry of Social Services</p>
+<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong><br/>Funding for therapeutic services</p>
+<p style="color: rgba(255,255,255,0.85); margin: 0 0 auto 0; font-size: 0.7rem;"><strong>Tech:</strong><br/>Java Spring Boot, SQL Server, Angular 7</p>
+<a href="https://autismfunding.saskatchewan.ca/" target="_blank" title="Visit Project" class="details-link" style="color: white; margin-top: 10px;"><i class="bi bi-link-45deg"></i> Visit Site</a>
+</div>
 </div>
 </div><!-- End Portfolio Item -->
 
 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-government">
-<div class="portfolio-content h-100" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 8px; overflow: hidden; color: white; display: flex; flex-direction: column; justify-content: flex-start; text-align: left; min-height: 250px; padding: 20px;">
-<i class="bi bi-shield-lock" style="font-size: 2.5rem; margin-bottom: 10px; color: white;"></i>
-<h4 style="color: white; margin: 0 0 8px 0; font-weight: bold; font-size: 1.1rem;">Guardian</h4>
-<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.8rem; font-weight: 600;"><strong>Client:</strong> Ministry of Justice</p>
-<p style="color: rgba(255,255,255,0.85); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong> Trust management for dependent adults and estates</p>
-<p style="color: rgba(255,255,255,0.8); margin: 0 0 8px 0; font-size: 0.7rem;"><strong>Tech:</strong> ASP.NET Web Forms, SQL Server, jQuery</p>
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); justify-content: center; align-items: center; text-align: center;">
+<i class="bi bi-shield-lock" style="font-size: 3rem; margin-bottom: 10px; color: white;"></i>
+<h4 style="color: white; margin: 0; font-weight: bold; font-size: 1.3rem;">Guardian</h4>
+<p style="color: rgba(255,255,255,0.85); margin: 8px 0 0 0; font-size: 0.8rem;">Hover to view details</p>
+</div>
+<div class="flip-card-back" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); justify-content: flex-start; padding: 20px; text-align: left;">
+<h4 style="color: white; margin: 0 0 10px 0; font-weight: bold; font-size: 1rem;">Guardian</h4>
+<p style="color: rgba(255,255,255,0.95); margin: 0 0 8px 0; font-size: 0.8rem;"><strong>Client:</strong><br/>Ministry of Justice</p>
+<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong><br/>Trust management for estates</p>
+<p style="color: rgba(255,255,255,0.85); margin: 0 0 auto 0; font-size: 0.7rem;"><strong>Tech:</strong><br/>ASP.NET Web Forms, SQL Server, jQuery</p>
+</div>
 </div>
 </div><!-- End Portfolio Item -->
 
 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-government">
-<div class="portfolio-content h-100" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 8px; overflow: hidden; color: white; display: flex; flex-direction: column; justify-content: flex-start; text-align: left; min-height: 250px; padding: 20px;">
-<i class="bi bi-exclamation-triangle" style="font-size: 2.5rem; margin-bottom: 10px; color: white;"></i>
-<h4 style="color: white; margin: 0 0 8px 0; font-weight: bold; font-size: 1.1rem;">PDAP</h4>
-<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.8rem; font-weight: 600;"><strong>Client:</strong> Ministry of Corrections</p>
-<p style="color: rgba(255,255,255,0.85); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong> Disaster recovery funding assistance</p>
-<p style="color: rgba(255,255,255,0.8); margin: 0 0 8px 0; font-size: 0.7rem;"><strong>Tech:</strong> ASP.NET Core, SQL Server, Blazor</p>
-<a href="https://www.saskatchewan.ca/residents/environment-public-health-and-safety/access-funding-through-the-provincial-disaster-assistance-program" target="_blank" title="Visit Project" class="details-link" style="color: white; margin-top: auto; padding-top: 10px;"><i class="bi bi-link-45deg"></i></a>
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); justify-content: center; align-items: center; text-align: center;">
+<i class="bi bi-exclamation-triangle" style="font-size: 3rem; margin-bottom: 10px; color: white;"></i>
+<h4 style="color: white; margin: 0; font-weight: bold; font-size: 1.3rem;">PDAP</h4>
+<p style="color: rgba(255,255,255,0.85); margin: 8px 0 0 0; font-size: 0.8rem;">Hover to view details</p>
+</div>
+<div class="flip-card-back" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); justify-content: flex-start; padding: 20px; text-align: left;">
+<h4 style="color: white; margin: 0 0 10px 0; font-weight: bold; font-size: 1rem;">PDAP</h4>
+<p style="color: rgba(255,255,255,0.95); margin: 0 0 8px 0; font-size: 0.8rem;"><strong>Client:</strong><br/>Ministry of Corrections</p>
+<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong><br/>Disaster recovery funding</p>
+<p style="color: rgba(255,255,255,0.85); margin: 0 0 auto 0; font-size: 0.7rem;"><strong>Tech:</strong><br/>ASP.NET Core, SQL Server, Blazor</p>
+<a href="https://www.saskatchewan.ca/residents/environment-public-health-and-safety/access-funding-through-the-provincial-disaster-assistance-program" target="_blank" title="Visit Project" class="details-link" style="color: white; margin-top: 10px;"><i class="bi bi-link-45deg"></i> Visit</a>
+</div>
 </div>
 </div><!-- End Portfolio Item -->
 
 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-government">
-<div class="portfolio-content h-100" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); border-radius: 8px; overflow: hidden; color: white; display: flex; flex-direction: column; justify-content: flex-start; text-align: left; min-height: 250px; padding: 20px;">
-<i class="bi bi-house" style="font-size: 2.5rem; margin-bottom: 10px; color: white;"></i>
-<h4 style="color: white; margin: 0 0 8px 0; font-weight: bold; font-size: 1.1rem;">Housing Benefits</h4>
-<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.8rem; font-weight: 600;"><strong>Client:</strong> Ministry of Social Services</p>
-<p style="color: rgba(255,255,255,0.85); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong> Monthly rental assistance program</p>
-<p style="color: rgba(255,255,255,0.8); margin: 0 0 8px 0; font-size: 0.7rem;"><strong>Tech:</strong> Java Spring Boot, Angular 7, SQL Server</p>
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); justify-content: center; align-items: center; text-align: center;">
+<i class="bi bi-house" style="font-size: 3rem; margin-bottom: 10px; color: white;"></i>
+<h4 style="color: white; margin: 0; font-weight: bold; font-size: 1.2rem;">Housing Benefits</h4>
+<p style="color: rgba(255,255,255,0.85); margin: 8px 0 0 0; font-size: 0.8rem;">Hover to view details</p>
+</div>
+<div class="flip-card-back" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); justify-content: flex-start; padding: 20px; text-align: left;">
+<h4 style="color: white; margin: 0 0 10px 0; font-weight: bold; font-size: 1rem;">Housing Benefits</h4>
+<p style="color: rgba(255,255,255,0.95); margin: 0 0 8px 0; font-size: 0.8rem;"><strong>Client:</strong><br/>Ministry of Social Services</p>
+<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong><br/>Rental assistance program</p>
+<p style="color: rgba(255,255,255,0.85); margin: 0 0 auto 0; font-size: 0.7rem;"><strong>Tech:</strong><br/>Java Spring Boot, Angular 7</p>
+</div>
 </div>
 </div><!-- End Portfolio Item -->
 
 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-government">
-<div class="portfolio-content h-100" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); border-radius: 8px; overflow: hidden; color: white; display: flex; flex-direction: column; justify-content: flex-start; text-align: left; min-height: 250px; padding: 20px;">
-<i class="bi bi-file-earmark-text" style="font-size: 2.5rem; margin-bottom: 10px; color: white;"></i>
-<h4 style="color: white; margin: 0 0 8px 0; font-weight: bold; font-size: 1.1rem;">SaskTenders</h4>
-<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.8rem; font-weight: 600;"><strong>Client:</strong> Ministry of Central Services</p>
-<p style="color: rgba(255,255,255,0.85); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong> Public sector tender portal</p>
-<p style="color: rgba(255,255,255,0.8); margin: 0 0 8px 0; font-size: 0.7rem;"><strong>Tech:</strong> ASP.NET Web Forms, SQL Server</p>
-<a href="https://sasktenders.ca/" target="_blank" title="Visit Project" class="details-link" style="color: white; margin-top: auto; padding-top: 10px;"><i class="bi bi-link-45deg"></i></a>
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); justify-content: center; align-items: center; text-align: center;">
+<i class="bi bi-file-earmark-text" style="font-size: 3rem; margin-bottom: 10px; color: white;"></i>
+<h4 style="color: white; margin: 0; font-weight: bold; font-size: 1.3rem;">SaskTenders</h4>
+<p style="color: rgba(255,255,255,0.85); margin: 8px 0 0 0; font-size: 0.8rem;">Hover to view details</p>
+</div>
+<div class="flip-card-back" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); justify-content: flex-start; padding: 20px; text-align: left;">
+<h4 style="color: white; margin: 0 0 10px 0; font-weight: bold; font-size: 1rem;">SaskTenders</h4>
+<p style="color: rgba(255,255,255,0.95); margin: 0 0 8px 0; font-size: 0.8rem;"><strong>Client:</strong><br/>Ministry of Central Services</p>
+<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong><br/>Public sector tender portal</p>
+<p style="color: rgba(255,255,255,0.85); margin: 0 0 auto 0; font-size: 0.7rem;"><strong>Tech:</strong><br/>ASP.NET Web Forms, SQL Server</p>
+<a href="https://sasktenders.ca/" target="_blank" title="Visit Project" class="details-link" style="color: white; margin-top: 10px;"><i class="bi bi-link-45deg"></i> Visit</a>
+</div>
 </div>
 </div><!-- End Portfolio Item -->
 
 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-government">
-<div class="portfolio-content h-100" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%); border-radius: 8px; overflow: hidden; color: white; display: flex; flex-direction: column; justify-content: flex-start; text-align: left; min-height: 250px; padding: 20px;">
-<i class="bi bi-cart-check" style="font-size: 2.5rem; margin-bottom: 10px; color: white;"></i>
-<h4 style="color: white; margin: 0 0 8px 0; font-weight: bold; font-size: 1.1rem;">SaskSurplus</h4>
-<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.8rem; font-weight: 600;"><strong>Client:</strong> Ministry of Central Services</p>
-<p style="color: rgba(255,255,255,0.85); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong> Government asset sales platform</p>
-<p style="color: rgba(255,255,255,0.8); margin: 0 0 8px 0; font-size: 0.7rem;"><strong>Tech:</strong> ASP.NET Core, SQL Server, C#</p>
-<a href="https://www.sasksurplus.ca/" target="_blank" title="Visit Project" class="details-link" style="color: white; margin-top: auto; padding-top: 10px;"><i class="bi bi-link-45deg"></i></a>
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%); justify-content: center; align-items: center; text-align: center;">
+<i class="bi bi-cart-check" style="font-size: 3rem; margin-bottom: 10px; color: white;"></i>
+<h4 style="color: white; margin: 0; font-weight: bold; font-size: 1.3rem;">SaskSurplus</h4>
+<p style="color: rgba(255,255,255,0.85); margin: 8px 0 0 0; font-size: 0.8rem;">Hover to view details</p>
+</div>
+<div class="flip-card-back" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%); justify-content: flex-start; padding: 20px; text-align: left;">
+<h4 style="color: white; margin: 0 0 10px 0; font-weight: bold; font-size: 1rem;">SaskSurplus</h4>
+<p style="color: rgba(255,255,255,0.95); margin: 0 0 8px 0; font-size: 0.8rem;"><strong>Client:</strong><br/>Ministry of Central Services</p>
+<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong><br/>Asset sales platform</p>
+<p style="color: rgba(255,255,255,0.85); margin: 0 0 auto 0; font-size: 0.7rem;"><strong>Tech:</strong><br/>ASP.NET Core, SQL Server, C#</p>
+<a href="https://www.sasksurplus.ca/" target="_blank" title="Visit Project" class="details-link" style="color: white; margin-top: 10px;"><i class="bi bi-link-45deg"></i> Visit</a>
+</div>
 </div>
 </div><!-- End Portfolio Item -->
 
 <!-- Mobile Projects -->
 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
-<div class="portfolio-content h-100" style="background: linear-gradient(135deg, #1fa2ff 0%, #12d8fa 100%); border-radius: 8px; overflow: hidden; color: white; display: flex; flex-direction: column; justify-content: flex-start; text-align: left; min-height: 250px; padding: 20px;">
-<i class="bi bi-fuel-pump" style="font-size: 2.5rem; margin-bottom: 10px; color: white;"></i>
-<h4 style="color: white; margin: 0 0 8px 0; font-weight: bold; font-size: 1.2rem;">GasBuddy</h4>
-<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.8rem; font-weight: 600;"><strong>Company:</strong> GB Internet Solutions</p>
-<p style="color: rgba(255,255,255,0.85); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong> Locate and compare gas prices</p>
-<p style="color: rgba(255,255,255,0.8); margin: 0 0 8px 0; font-size: 0.7rem;"><strong>Tech:</strong> Objective-C, Xcode, iOS</p>
-<a href="https://apps.apple.com/us/app/gasbuddy-find-pay-for-gas/id406719683" target="_blank" title="Visit App" class="details-link" style="color: white; margin-top: auto; padding-top: 10px;"><i class="bi bi-link-45deg"></i> App Store</a>
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front" style="background: linear-gradient(135deg, #1fa2ff 0%, #12d8fa 100%); justify-content: center; align-items: center; text-align: center;">
+<i class="bi bi-fuel-pump" style="font-size: 3rem; margin-bottom: 10px; color: white;"></i>
+<h4 style="color: white; margin: 0; font-weight: bold; font-size: 1.3rem;">GasBuddy</h4>
+<p style="color: rgba(255,255,255,0.85); margin: 8px 0 0 0; font-size: 0.8rem;">Hover to view details</p>
+</div>
+<div class="flip-card-back" style="background: linear-gradient(135deg, #1fa2ff 0%, #12d8fa 100%); justify-content: flex-start; padding: 20px; text-align: left;">
+<h4 style="color: white; margin: 0 0 10px 0; font-weight: bold; font-size: 1rem;">GasBuddy</h4>
+<p style="color: rgba(255,255,255,0.95); margin: 0 0 8px 0; font-size: 0.8rem;"><strong>Company:</strong><br/>GB Internet Solutions</p>
+<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong><br/>Locate and compare gas prices</p>
+<p style="color: rgba(255,255,255,0.85); margin: 0 0 auto 0; font-size: 0.7rem;"><strong>Tech:</strong><br/>Objective-C, Xcode, iOS</p>
+<a href="https://apps.apple.com/us/app/gasbuddy-find-pay-for-gas/id406719683" target="_blank" title="Visit App" class="details-link" style="color: white; margin-top: 10px;"><i class="bi bi-link-45deg"></i> App Store</a>
+</div>
 </div>
 </div><!-- End Portfolio Item -->
 
 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
-<div class="portfolio-content h-100" style="background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%); border-radius: 8px; overflow: hidden; color: white; display: flex; flex-direction: column; justify-content: flex-start; text-align: left; min-height: 250px; padding: 20px;">
-<i class="bi bi-shop" style="font-size: 2.5rem; margin-bottom: 10px; color: white;"></i>
-<h4 style="color: white; margin: 0 0 8px 0; font-weight: bold; font-size: 1.1rem;">Open Stores</h4>
-<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.8rem; font-weight: 600;"><strong>Company:</strong> GB Internet Solutions</p>
-<p style="color: rgba(255,255,255,0.85); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong> Multi-brand store finder (7-Eleven, Sheetz, Shell, etc.)</p>
-<p style="color: rgba(255,255,255,0.8); margin: 0 0 8px 0; font-size: 0.7rem;"><strong>Tech:</strong> Objective-C, Xcode, iOS</p>
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front" style="background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%); justify-content: center; align-items: center; text-align: center;">
+<i class="bi bi-shop" style="font-size: 3rem; margin-bottom: 10px; color: white;"></i>
+<h4 style="color: white; margin: 0; font-weight: bold; font-size: 1.3rem;">Open Stores</h4>
+<p style="color: rgba(255,255,255,0.85); margin: 8px 0 0 0; font-size: 0.8rem;">Hover to view details</p>
+</div>
+<div class="flip-card-back" style="background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%); justify-content: flex-start; padding: 20px; text-align: left;">
+<h4 style="color: white; margin: 0 0 10px 0; font-weight: bold; font-size: 1rem;">Open Stores</h4>
+<p style="color: rgba(255,255,255,0.95); margin: 0 0 8px 0; font-size: 0.8rem;"><strong>Company:</strong><br/>GB Internet Solutions</p>
+<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong><br/>Multi-brand store finder</p>
+<p style="color: rgba(255,255,255,0.85); margin: 0 0 auto 0; font-size: 0.7rem;"><strong>Tech:</strong><br/>Objective-C, Xcode, iOS</p>
+</div>
 </div>
 </div><!-- End Portfolio Item -->
 
 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-mobile">
-<div class="portfolio-content h-100" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 8px; overflow: hidden; color: white; display: flex; flex-direction: column; justify-content: flex-start; text-align: left; min-height: 250px; padding: 20px;">
-<i class="bi bi-clock-history" style="font-size: 2.5rem; margin-bottom: 10px; color: white;"></i>
-<h4 style="color: white; margin: 0 0 8px 0; font-weight: bold; font-size: 1.2rem;">SpotTime</h4>
-<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.8rem; font-weight: 600;"><strong>Company:</strong> Twisted Pair Productions</p>
-<p style="color: rgba(255,255,255,0.85); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong> Professional commercial timer for ad industry</p>
-<p style="color: rgba(255,255,255,0.8); margin: 0 0 8px 0; font-size: 0.7rem;"><strong>Tech:</strong> Objective-C, Xcode, iOS</p>
-<a href="http://skios.ca/app/spottime" target="_blank" title="Visit Project" class="details-link" style="color: white; margin-top: auto; padding-top: 10px;"><i class="bi bi-link-45deg"></i> Project</a>
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); justify-content: center; align-items: center; text-align: center;">
+<i class="bi bi-clock-history" style="font-size: 3rem; margin-bottom: 10px; color: white;"></i>
+<h4 style="color: white; margin: 0; font-weight: bold; font-size: 1.3rem;">SpotTime</h4>
+<p style="color: rgba(255,255,255,0.85); margin: 8px 0 0 0; font-size: 0.8rem;">Hover to view details</p>
+</div>
+<div class="flip-card-back" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); justify-content: flex-start; padding: 20px; text-align: left;">
+<h4 style="color: white; margin: 0 0 10px 0; font-weight: bold; font-size: 1rem;">SpotTime</h4>
+<p style="color: rgba(255,255,255,0.95); margin: 0 0 8px 0; font-size: 0.8rem;"><strong>Company:</strong><br/>Twisted Pair Productions</p>
+<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong><br/>Commercial timer for ads</p>
+<p style="color: rgba(255,255,255,0.85); margin: 0 0 auto 0; font-size: 0.7rem;"><strong>Tech:</strong><br/>Objective-C, Xcode, iOS</p>
+<a href="http://skios.ca/app/spottime" target="_blank" title="Visit Project" class="details-link" style="color: white; margin-top: 10px;"><i class="bi bi-link-45deg"></i> Project</a>
+</div>
 </div>
 </div><!-- End Portfolio Item -->
 
 <!-- Internal Applications -->
 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-government">
-<div class="portfolio-content h-100" style="background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%); border-radius: 8px; overflow: hidden; color: white; display: flex; flex-direction: column; justify-content: flex-start; text-align: left; min-height: 250px; padding: 20px;">
-<i class="bi bi-percent" style="font-size: 2.5rem; margin-bottom: 10px; color: white;"></i>
-<h4 style="color: white; margin: 0 0 8px 0; font-weight: bold; font-size: 1.1rem;">PST Refund Application</h4>
-<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.8rem; font-weight: 600;"><strong>Client:</strong> Ministry of Finance</p>
-<p style="color: rgba(255,255,255,0.85); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong> Process overpaid sales tax claims</p>
-<p style="color: rgba(255,255,255,0.8); margin: 0 0 8px 0; font-size: 0.7rem;"><strong>Tech:</strong> Windows Forms .NET, SQL Server</p>
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front" style="background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%); justify-content: center; align-items: center; text-align: center;">
+<i class="bi bi-percent" style="font-size: 3rem; margin-bottom: 10px; color: white;"></i>
+<h4 style="color: white; margin: 0; font-weight: bold; font-size: 1.2rem;">PST Refund</h4>
+<p style="color: rgba(255,255,255,0.85); margin: 8px 0 0 0; font-size: 0.8rem;">Hover to view details</p>
+</div>
+<div class="flip-card-back" style="background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%); justify-content: flex-start; padding: 20px; text-align: left;">
+<h4 style="color: white; margin: 0 0 10px 0; font-weight: bold; font-size: 1rem;">PST Refund</h4>
+<p style="color: rgba(255,255,255,0.95); margin: 0 0 8px 0; font-size: 0.8rem;"><strong>Client:</strong><br/>Ministry of Finance</p>
+<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong><br/>Tax refund processing</p>
+<p style="color: rgba(255,255,255,0.85); margin: 0 0 auto 0; font-size: 0.7rem;"><strong>Tech:</strong><br/>Windows Forms .NET, SQL Server</p>
+</div>
 </div>
 </div><!-- End Portfolio Item -->
 
 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-government">
-<div class="portfolio-content h-100" style="background: linear-gradient(135deg, #00b894 0%, #00d2d3 100%); border-radius: 8px; overflow: hidden; color: white; display: flex; flex-direction: column; justify-content: flex-start; text-align: left; min-height: 250px; padding: 20px;">
-<i class="bi bi-fuel-pump" style="font-size: 2.5rem; margin-bottom: 10px; color: white;"></i>
-<h4 style="color: white; margin: 0 0 8px 0; font-weight: bold; font-size: 1rem;">IFTA</h4>
-<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.8rem; font-weight: 600;"><strong>Client:</strong> Ministry of Finance</p>
-<p style="color: rgba(255,255,255,0.85); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong> Process fuel tax claims from trucking</p>
-<p style="color: rgba(255,255,255,0.8); margin: 0 0 8px 0; font-size: 0.7rem;"><strong>Tech:</strong> Windows Forms .NET, SQL Server</p>
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front" style="background: linear-gradient(135deg, #00b894 0%, #00d2d3 100%); justify-content: center; align-items: center; text-align: center;">
+<i class="bi bi-fuel-pump" style="font-size: 3rem; margin-bottom: 10px; color: white;"></i>
+<h4 style="color: white; margin: 0; font-weight: bold; font-size: 1.2rem;">IFTA</h4>
+<p style="color: rgba(255,255,255,0.85); margin: 8px 0 0 0; font-size: 0.8rem;">Hover to view details</p>
+</div>
+<div class="flip-card-back" style="background: linear-gradient(135deg, #00b894 0%, #00d2d3 100%); justify-content: flex-start; padding: 20px; text-align: left;">
+<h4 style="color: white; margin: 0 0 10px 0; font-weight: bold; font-size: 1rem;">IFTA</h4>
+<p style="color: rgba(255,255,255,0.95); margin: 0 0 8px 0; font-size: 0.8rem;"><strong>Client:</strong><br/>Ministry of Finance</p>
+<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong><br/>Fuel tax claims processing</p>
+<p style="color: rgba(255,255,255,0.85); margin: 0 0 auto 0; font-size: 0.7rem;"><strong>Tech:</strong><br/>Windows Forms .NET, SQL Server</p>
+</div>
 </div>
 </div><!-- End Portfolio Item -->
 
 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-government">
-<div class="portfolio-content h-100" style="background: linear-gradient(135deg, #fd79a8 0%, #fdcb6e 100%); border-radius: 8px; overflow: hidden; color: white; display: flex; flex-direction: column; justify-content: flex-start; text-align: left; min-height: 250px; padding: 20px;">
-<i class="bi bi-person-vcard" style="font-size: 2.5rem; margin-bottom: 10px; color: white;"></i>
-<h4 style="color: white; margin: 0 0 8px 0; font-weight: bold; font-size: 1rem;">SK Gov Directory</h4>
-<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.8rem; font-weight: 600;"><strong>Client:</strong> Ministry of Central Services</p>
-<p style="color: rgba(255,255,255,0.85); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong> Government entity directory management</p>
-<p style="color: rgba(255,255,255,0.8); margin: 0 0 8px 0; font-size: 0.7rem;"><strong>Tech:</strong> ASP.NET Web Forms, .NET 3.5, SQL Server</p>
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front" style="background: linear-gradient(135deg, #fd79a8 0%, #fdcb6e 100%); justify-content: center; align-items: center; text-align: center;">
+<i class="bi bi-person-vcard" style="font-size: 3rem; margin-bottom: 10px; color: white;"></i>
+<h4 style="color: white; margin: 0; font-weight: bold; font-size: 1.1rem;">SK Gov Directory</h4>
+<p style="color: rgba(255,255,255,0.85); margin: 8px 0 0 0; font-size: 0.8rem;">Hover to view details</p>
+</div>
+<div class="flip-card-back" style="background: linear-gradient(135deg, #fd79a8 0%, #fdcb6e 100%); justify-content: flex-start; padding: 20px; text-align: left;">
+<h4 style="color: white; margin: 0 0 10px 0; font-weight: bold; font-size: 0.95rem;">SK Gov Directory</h4>
+<p style="color: rgba(255,255,255,0.95); margin: 0 0 8px 0; font-size: 0.8rem;"><strong>Client:</strong><br/>Ministry of Central Services</p>
+<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong><br/>Directory management</p>
+<p style="color: rgba(255,255,255,0.85); margin: 0 0 auto 0; font-size: 0.7rem;"><strong>Tech:</strong><br/>ASP.NET Web Forms, .NET 3.5</p>
+</div>
 </div>
 </div><!-- End Portfolio Item -->
 
 <!-- Prototypes -->
 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-prototype">
-<div class="portfolio-content h-100" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; overflow: hidden; color: white; display: flex; flex-direction: column; justify-content: flex-start; text-align: left; min-height: 250px; padding: 20px;">
-<i class="bi bi-shield-lock" style="font-size: 2.5rem; margin-bottom: 10px; color: white;"></i>
-<h4 style="color: white; margin: 0 0 8px 0; font-weight: bold; font-size: 1rem;">SAML SSO Okta</h4>
-<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.8rem; font-weight: 600;"><strong>Purpose:</strong> Enterprise authentication demo</p>
-<p style="color: rgba(255,255,255,0.85); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Features:</strong> Okta, SalesForce, Freshworks integration</p>
-<p style="color: rgba(255,255,255,0.8); margin: 0 0 8px 0; font-size: 0.7rem;"><strong>Tech:</strong> ASP.NET Core 3.1 MVC, Azure</p>
-<a href="https://saml-okta-net-mvc-3-nguyen365.azurewebsites.net/" target="_blank" title="Visit Demo" class="details-link" style="color: white; margin-top: auto; padding-top: 10px;"><i class="bi bi-link-45deg"></i> Demo</a>
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); justify-content: center; align-items: center; text-align: center;">
+<i class="bi bi-shield-lock" style="font-size: 3rem; margin-bottom: 10px; color: white;"></i>
+<h4 style="color: white; margin: 0; font-weight: bold; font-size: 1.2rem;">SAML SSO</h4>
+<p style="color: rgba(255,255,255,0.85); margin: 8px 0 0 0; font-size: 0.8rem;">Hover to view details</p>
+</div>
+<div class="flip-card-back" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); justify-content: flex-start; padding: 20px; text-align: left;">
+<h4 style="color: white; margin: 0 0 10px 0; font-weight: bold; font-size: 1rem;">SAML SSO Okta</h4>
+<p style="color: rgba(255,255,255,0.95); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong> Enterprise auth demo</p>
+<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.7rem;"><strong>Integration:</strong> Okta, SalesForce, Freshworks</p>
+<p style="color: rgba(255,255,255,0.85); margin: 0 0 auto 0; font-size: 0.65rem;"><strong>Tech:</strong> ASP.NET Core 3.1 MVC</p>
+<a href="https://saml-okta-net-mvc-3-nguyen365.azurewebsites.net/" target="_blank" title="Visit Demo" class="details-link" style="color: white; margin-top: 8px;"><i class="bi bi-link-45deg"></i> Demo</a>
+</div>
 </div>
 </div><!-- End Portfolio Item -->
 
 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-prototype">
-<div class="portfolio-content h-100" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); border-radius: 8px; overflow: hidden; color: white; display: flex; flex-direction: column; justify-content: flex-start; text-align: left; min-height: 250px; padding: 20px;">
-<i class="bi bi-translate" style="font-size: 2.5rem; margin-bottom: 10px; color: white;"></i>
-<h4 style="color: white; margin: 0 0 8px 0; font-weight: bold; font-size: 1.1rem;">Azure AI Translator</h4>
-<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.8rem; font-weight: 600;"><strong>Purpose:</strong> Multi-language translation service</p>
-<p style="color: rgba(255,255,255,0.85); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Features:</strong> Real-time language translation</p>
-<p style="color: rgba(255,255,255,0.8); margin: 0 0 8px 0; font-size: 0.7rem;"><strong>Tech:</strong> ASP.NET Web Forms, Azure AI, Bootstrap</p>
-<a href="https://translation-azure-ai-nguyen365.azurewebsites.net/" target="_blank" title="Visit Demo" class="details-link" style="color: white; margin-top: auto; padding-top: 10px;"><i class="bi bi-link-45deg"></i> Demo</a>
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); justify-content: center; align-items: center; text-align: center;">
+<i class="bi bi-translate" style="font-size: 3rem; margin-bottom: 10px; color: white;"></i>
+<h4 style="color: white; margin: 0; font-weight: bold; font-size: 1.2rem;">AI Translator</h4>
+<p style="color: rgba(255,255,255,0.85); margin: 8px 0 0 0; font-size: 0.8rem;">Hover to view details</p>
+</div>
+<div class="flip-card-back" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); justify-content: flex-start; padding: 20px; text-align: left;">
+<h4 style="color: white; margin: 0 0 10px 0; font-weight: bold; font-size: 1rem;">Azure AI Translator</h4>
+<p style="color: rgba(255,255,255,0.95); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong> Multi-language translation</p>
+<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.7rem;"><strong>Features:</strong> Real-time translation service</p>
+<p style="color: rgba(255,255,255,0.85); margin: 0 0 auto 0; font-size: 0.65rem;"><strong>Tech:</strong> ASP.NET Web Forms, Azure AI</p>
+<a href="https://translation-azure-ai-nguyen365.azurewebsites.net/" target="_blank" title="Visit Demo" class="details-link" style="color: white; margin-top: 8px;"><i class="bi bi-link-45deg"></i> Demo</a>
+</div>
 </div>
 </div><!-- End Portfolio Item -->
 
 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-prototype">
-<div class="portfolio-content h-100" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); border-radius: 8px; overflow: hidden; color: white; display: flex; flex-direction: column; justify-content: flex-start; text-align: left; min-height: 250px; padding: 20px;">
-<i class="bi bi-joystick" style="font-size: 2.5rem; margin-bottom: 10px; color: white;"></i>
-<h4 style="color: white; margin: 0 0 8px 0; font-weight: bold; font-size: 1rem;">Game Hub - React</h4>
-<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.8rem; font-weight: 600;"><strong>Purpose:</strong> Gaming database with search</p>
-<p style="color: rgba(255,255,255,0.85); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Features:</strong> Infinite scrolling, platform filtering</p>
-<p style="color: rgba(255,255,255,0.8); margin: 0 0 8px 0; font-size: 0.7rem;"><strong>Tech:</strong> React 18, TypeScript, Chakra UI, Zustand</p>
-<a href="https://gamehub-react-nguyen365.azurewebsites.net/" target="_blank" title="Visit Demo" class="details-link" style="color: white; margin-top: auto; padding-top: 10px;"><i class="bi bi-link-45deg"></i> Demo</a>
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); justify-content: center; align-items: center; text-align: center;">
+<i class="bi bi-joystick" style="font-size: 3rem; margin-bottom: 10px; color: white;"></i>
+<h4 style="color: white; margin: 0; font-weight: bold; font-size: 1.2rem;">Game Hub-React</h4>
+<p style="color: rgba(255,255,255,0.85); margin: 8px 0 0 0; font-size: 0.8rem;">Hover to view details</p>
+</div>
+<div class="flip-card-back" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); justify-content: flex-start; padding: 20px; text-align: left;">
+<h4 style="color: white; margin: 0 0 10px 0; font-weight: bold; font-size: 0.95rem;">Game Hub - React 18</h4>
+<p style="color: rgba(255,255,255,0.95); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong> Gaming database platform</p>
+<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.7rem;"><strong>Features:</strong> Infinite scrolling, filtering</p>
+<p style="color: rgba(255,255,255,0.85); margin: 0 0 auto 0; font-size: 0.65rem;"><strong>Tech:</strong> React 18, TypeScript, Chakra UI</p>
+<a href="https://gamehub-react-nguyen365.azurewebsites.net/" target="_blank" title="Visit Demo" class="details-link" style="color: white; margin-top: 8px;"><i class="bi bi-link-45deg"></i> Demo</a>
+</div>
 </div>
 </div><!-- End Portfolio Item -->
 
 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-prototype">
-<div class="portfolio-content h-100" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); border-radius: 8px; overflow: hidden; color: white; display: flex; flex-direction: column; justify-content: flex-start; text-align: left; min-height: 250px; padding: 20px;">
-<i class="bi bi-controller" style="font-size: 2.5rem; margin-bottom: 10px; color: white;"></i>
-<h4 style="color: white; margin: 0 0 8px 0; font-weight: bold; font-size: 1rem;">Game Hub - Angular</h4>
-<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.8rem; font-weight: 600;"><strong>Purpose:</strong> Gaming database with sorting</p>
-<p style="color: rgba(255,255,255,0.85); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Features:</strong> Search and sort functionality</p>
-<p style="color: rgba(255,255,255,0.8); margin: 0 0 8px 0; font-size: 0.7rem;"><strong>Tech:</strong> Angular 11, TypeScript, Angular Material</p>
-<a href="https://gamehub-angular-nguyen365.azurewebsites.net/" target="_blank" title="Visit Demo" class="details-link" style="color: white; margin-top: auto; padding-top: 10px;"><i class="bi bi-link-45deg"></i> Demo</a>
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); justify-content: center; align-items: center; text-align: center;">
+<i class="bi bi-controller" style="font-size: 3rem; margin-bottom: 10px; color: white;"></i>
+<h4 style="color: white; margin: 0; font-weight: bold; font-size: 1.2rem;">Game Hub-Angular</h4>
+<p style="color: rgba(255,255,255,0.85); margin: 8px 0 0 0; font-size: 0.8rem;">Hover to view details</p>
+</div>
+<div class="flip-card-back" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); justify-content: flex-start; padding: 20px; text-align: left;">
+<h4 style="color: white; margin: 0 0 10px 0; font-weight: bold; font-size: 0.95rem;">Game Hub - Angular 11</h4>
+<p style="color: rgba(255,255,255,0.95); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong> Gaming database platform</p>
+<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.7rem;"><strong>Features:</strong> Search and sort functionality</p>
+<p style="color: rgba(255,255,255,0.85); margin: 0 0 auto 0; font-size: 0.65rem;"><strong>Tech:</strong> Angular 11, TypeScript, Angular Material</p>
+<a href="https://gamehub-angular-nguyen365.azurewebsites.net/" target="_blank" title="Visit Demo" class="details-link" style="color: white; margin-top: 8px;"><i class="bi bi-link-45deg"></i> Demo</a>
+</div>
 </div>
 </div><!-- End Portfolio Item -->
 
 <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-prototype">
-<div class="portfolio-content h-100" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); border-radius: 8px; overflow: hidden; color: white; display: flex; flex-direction: column; justify-content: flex-start; text-align: left; min-height: 250px; padding: 20px;">
-<i class="bi bi-film" style="font-size: 2.5rem; margin-bottom: 10px; color: white;"></i>
-<h4 style="color: white; margin: 0 0 8px 0; font-weight: bold; font-size: 1rem;">Movie Rental System</h4>
-<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.8rem; font-weight: 600;"><strong>Purpose:</strong> Rental management application</p>
-<p style="color: rgba(255,255,255,0.85); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Features:</strong> Movie and customer management</p>
-<p style="color: rgba(255,255,255,0.8); margin: 0 0 8px 0; font-size: 0.7rem;"><strong>Tech:</strong> ASP.NET MVC 5, SQL Server, AutoMapper</p>
-<a href="https://movie-rental-netmvc5-nguyen365.azurewebsites.net/" target="_blank" title="Visit Demo" class="details-link" style="color: white; margin-top: auto; padding-top: 10px;"><i class="bi bi-link-45deg"></i> Demo</a>
+<div class="flip-card">
+<div class="flip-card-inner">
+<div class="flip-card-front" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); justify-content: center; align-items: center; text-align: center;">
+<i class="bi bi-film" style="font-size: 3rem; margin-bottom: 10px; color: white;"></i>
+<h4 style="color: white; margin: 0; font-weight: bold; font-size: 1.2rem;">Movie Rental</h4>
+<p style="color: rgba(255,255,255,0.85); margin: 8px 0 0 0; font-size: 0.8rem;">Hover to view details</p>
+</div>
+<div class="flip-card-back" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); justify-content: flex-start; padding: 20px; text-align: left;">
+<h4 style="color: white; margin: 0 0 10px 0; font-weight: bold; font-size: 0.95rem;">Movie Rental System</h4>
+<p style="color: rgba(255,255,255,0.95); margin: 0 0 8px 0; font-size: 0.75rem;"><strong>Purpose:</strong> Rental management app</p>
+<p style="color: rgba(255,255,255,0.9); margin: 0 0 8px 0; font-size: 0.7rem;"><strong>Features:</strong> Movie/customer management</p>
+<p style="color: rgba(255,255,255,0.85); margin: 0 0 auto 0; font-size: 0.65rem;"><strong>Tech:</strong> ASP.NET MVC 5, SQL Server</p>
+<a href="https://movie-rental-netmvc5-nguyen365.azurewebsites.net/" target="_blank" title="Visit Demo" class="details-link" style="color: white; margin-top: 8px;"><i class="bi bi-link-45deg"></i> Demo</a>
+</div>
 </div>
 </div><!-- End Portfolio Item -->
 
